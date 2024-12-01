@@ -17,6 +17,7 @@ html {
     font-size: 16px;
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    min-height: 100vh;
 }
 
 body {
@@ -49,16 +50,10 @@ nav ul li a:hover {
     color: var(--seafoam);
 }
 
-main {
-    flex: 1;
-    padding: 2rem;
-    background-color: white;
-}
-
-img {
-    max-width: 800px;
-    height: auto;
-    border-radius: 10px;
+nav a.active {
+    color: var(--coral);
+    font-weight: bold; 
+    text-decoration: underline;
 }
 
 footer {
@@ -68,12 +63,8 @@ footer {
     padding: 1rem;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2
+{
     color: var(--ocean-blue);
 }
 
@@ -85,6 +76,7 @@ a {
 a:hover {
     text-decoration: underline;
 }
+  
 
 @media (max-width: 768px) {
     body {

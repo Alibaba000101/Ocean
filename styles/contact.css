@@ -1,0 +1,23 @@
+main {
+    flex: 1;
+    padding: 4rem;
+    background-color: var(--ocean-blue);
+    font-size: medium;
+}
+
+.header {
+    font: bold;
+}
+
+img {
+    max-width: auto;
+    height: auto;
+    border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+
+    img {
+        max-width: 100%;
+    }
+}

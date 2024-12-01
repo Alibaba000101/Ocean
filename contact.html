@@ -5,36 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mysteries of the Oceans</title>
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/contact.css">
 <body>
-    <header>
+    <header class=".header">
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>Welcome to my Website about the Ocean </h1>
-        <div>On this Website we delve into the fun facts about the oceans and other mysteries that lie in these different bodies of water!</div>
-        <div>There are currently 5 oceans on the planet and we know as much about them as we know about aliens! (they're here... o0) </div>
-        <div>The oceans cover about 71% of the Earth's surface and have an average depth of over 12,000 feet (3,700 meters). The sheer size makes exploration a massive challenge.</div>
+        <h1>Ocean Contacts </h1>
         
-        <form id="contact-form" onsubmit="sendMail(event)">
-            <label for="email">Your Email:</label>
-            <input type="email" id="email" name="email" placeholder="Enter your e-mail" required>
-
-            <label for="message">Your Message:</label>
-            <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
-
-            <button type="submit">Send Message</button>
+        <form action="mailto:Mustafa.alarhnimi@gmail.com" method="post" enctype="text/plain">
+            Name:<br>
+            <input type="text" name="name"><br>
+            E-mail:<br>
+            <input type="text" name="mail"><br>
+            Comment:<br>
+            <input type="text" name="comment" size="30"><br><br>
+            <input type="submit" value="Send">
+            <input type="reset" value="Reset">
         </form>
-
+        <div>
+            <img src="./images/ship-at-sea.avif" alt="ship at sea">
+        </div>
     </main>
     <footer>
-        <p>&copy; 2024 Mustafala. All rights reserved.</p>
+        <p>&copy; 2024 Ocean. All rights reserved.</p>
     </footer>
 </body>
 </html>
-
